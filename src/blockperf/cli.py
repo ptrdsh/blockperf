@@ -81,6 +81,8 @@ def main():
     if already_running():
         sys.exit("Blockperf is already running")
 
+    sys.stdout.write(f"Python: {sys.version}")
+
     app_config = AppConfig()
     app = App(app_config)
 
